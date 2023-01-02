@@ -30,60 +30,48 @@ let answerscorrect = document.getElementById("answers");
 let explications = [];
 
 let randomQuestions;
-let currentIndex;
+let currentIndex=0;
 let TimeCount;
 moveInfo();
 
 
 //========clicks=======//
 AnswerA.onclick=function(){
-    if(questions[currentIndex].options[0].isCorrect){
+    if(questions[currentIndex].options[0].option == questions[currentIndex].explanation[3].answer ){
         result++
     }else{
         explications.push(questions[currentIndex].explanation)
     }
     currentIndex++;
-    if(currentIndex>9){
-        ShowResult()
-    }
     NextQuestion(currentIndex)
 
 }
 AnswerB.onclick=function(){
-    if(questions[currentIndex].options[1].isCorrect){
+    if(questions[currentIndex].options[1].option == questions[currentIndex].explanation[3].answer ){
         result++
     }else{
         explications.push(questions[currentIndex].explanation)
     }
     currentIndex++;
-    if(currentIndex>9){
-        ShowResult()
-    }
     NextQuestion(currentIndex)
 }
 AnswerC.onclick=function(){
-    if(questions[currentIndex].options[2].isCorrect){
+    if(questions[currentIndex].options[2].option == questions[currentIndex].explanation[3].answer ){
         result++
     }else{
         explications.push(questions[currentIndex].explanation)
     }
     currentIndex++;
-    if(currentIndex>9){
-        ShowResult()
-    }
     NextQuestion(currentIndex)
 
 }
 AnswerD.onclick=function(){
-    if(questions[currentIndex].options[3].isCorrect){
+    if(questions[currentIndex].options[3].option == questions[currentIndex].explanation[3].answer ){
         result++
     }else{
         explications.push(questions[currentIndex].explanation)
     }
     currentIndex++;
-    if(currentIndex>9){
-        ShowResult()
-    }
     NextQuestion(currentIndex)
 
 }
@@ -103,6 +91,9 @@ function startQuizz(){
 }
 
 function NextQuestion(index){
+    if(index>9){
+        ShowResult()
+    }
     displayQuestions(randomQuestions[index]);
     clearInterval(TimeCount)       
     timer();
@@ -288,9 +279,9 @@ function timer(){
     if(seconds==00){
         console.log(currentIndex)
         explications.push(questions[currentIndex].explanation)
-        if(currentIndex>=9){
-            ShowResult()
-        }
+        // if(currentIndex>=9){
+        //     ShowResult()
+        // }
         currentIndex++;
         NextQuestion(currentIndex)
     }
