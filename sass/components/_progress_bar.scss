@@ -1,0 +1,41 @@
+
+.Allprogress{
+  top: 7%;
+  left: 10%;
+}
+.progress{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%rem;
+}
+.progressNum{
+  position: absolute;
+}
+
+.progressBar{
+    background-color: $text-color;
+    height: 0.4rem;
+    width: 41rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: absolute;
+    left: 7%;
+    
+}
+.progressstart{
+    height: 0.4rem;
+    background-color: $secondary-color;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    position: absolute;
+    border-radius: 1rem;
+    left: 7%;
+}

@@ -1,0 +1,50 @@
+
+
+.second_pg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quizz{
+  width: 45rem;
+  padding: 2rem;
+  margin-top: 1rem;
+  &_question{
+    margin-left: 1rem;
+    font-weight: 200;
+  }
+  &_answers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_each_circle{
+        width: 1.7rem;
+        height: 1.7rem;
+        padding-top:0.3rem ;
+        background-color: none;
+        @include border($text-color);
+        display: block;
+        float: left;
+        margin-top: -3rem;
+        margin-bottom: 0rem;
+      }
+    &_each{
+        @include button(8rem);          
+      }
+    }
+    .timer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1{
+        color: $accent-color;
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 300;
+      }
+    }
+}
+
+

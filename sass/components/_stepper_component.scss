@@ -1,0 +1,55 @@
+
+.contains_stepper{
+    position: fixed;
+    top: 40%;
+    left: 2%
+}
+.stepper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+    position: relative;
+    &::before{
+        content: "";
+        height: 100%;
+        background-color: $text-color;
+        width: 0.3rem;
+        position: absolute;
+        z-index: -1;
+    }
+}
+.steps{
+    width: 0.3rem;
+    background-color: $secondary-color;
+    position: absolute;
+    z-index: -1;
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -ms-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+}
+.circle{
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: $text-color;
+    color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.active{
+    background-color: $secondary-color;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}

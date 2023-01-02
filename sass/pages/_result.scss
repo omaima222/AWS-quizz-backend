@@ -1,0 +1,54 @@
+
+.congrats{
+    font-weight: 300;
+    font-size: 3rem;
+    color: $accent-color;
+    text-align: center;
+    margin: 0;
+}
+
+.third_pg{
+    width: 60rem;
+    font-weight: 200;
+    h2{
+        font-weight: 300;
+    }
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+}
+.num{
+    color: $secondary-color;
+}
+
+.answers{
+    margin-top: 3rem;
+    padding-left: 1rem;
+    list-style: decimal;
+    li{
+        margin-top: 4rem;
+        p{
+            margin-left: 1rem;
+        }
+    }
+    &_true{
+        background: none;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        @include border($text-color);
+        display: flex;
+        margin-left: -1rem;
+    }
+    &_circle{
+        background-color: none;
+        // @include border($text-color);
+        border-radius: 50%;
+        width: 2rem;
+        height: 1.5rem;
+        padding-left: 0.4rem ;
+        color: $secondary-color;
+    }
+}
+
