@@ -9,11 +9,11 @@
 }
 
 @mixin trans($s){
-    transition:$s s ;
-    -webkit-transition:$s s ;
-    -moz-transition:$s s ;
-    -ms-transition:$s s ;
-    -o-transition:$s s ;
+    transition:$s's';
+    -webkit-transition:$s's';
+    -moz-transition:$s's';
+    -ms-transition:$s's';
+    -o-transition:$s's';
 }
 
 @mixin button($h) {

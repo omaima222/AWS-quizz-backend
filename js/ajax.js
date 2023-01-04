@@ -30,12 +30,7 @@ ajax.onreadystatechange = function(){
         questions.push({explanation,options,question: data[i].question });
 
       }
-     
+
     }
 }
-
-console.log(questions);
-
-
-
 

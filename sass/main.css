@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .Allprogress {
@@ -164,11 +165,11 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  transition: 0.3 s;
-  -webkit-transition: 0.3 s;
-  -moz-transition: 0.3 s;
-  -ms-transition: 0.3 s;
-  -o-transition: 0.3 s;
+  transition: 0.3 "s";
+  -webkit-transition: 0.3 "s";
+  -moz-transition: 0.3 "s";
+  -ms-transition: 0.3 "s";
+  -o-transition: 0.3 "s";
   text-align: center;
   text-decoration: none;
 }
@@ -191,11 +192,11 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   color: #ececec;
-  transition: 0 s;
-  -webkit-transition: 0 s;
-  -moz-transition: 0 s;
-  -ms-transition: 0 s;
-  -o-transition: 0 s;
+  transition: 0 "s";
+  -webkit-transition: 0 "s";
+  -moz-transition: 0 "s";
+  -ms-transition: 0 "s";
+  -o-transition: 0 "s";
 }
 .infos .exclam {
   font-size: 9rem;
@@ -204,6 +205,99 @@ body {
 }
 .infos .alist {
   display: flex;
+}
+
+.first_logo .first_logo_text {
+  font-size: 9rem;
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  font-weight: 400;
+}
+.first_logo .first_logo_img {
+  margin: 0;
+  padding: 0;
+  width: 19.5rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.name {
+  background: none;
+  color: #ececec;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.8rem;
+  width: 15rem;
+  height: 2.4rem;
+  border: 1px solid #ececec;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
+}
+
+.label {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.submit {
+  width: 20rem;
+  height: 2.4rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: #ececec;
+  font-weight: 300;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: 0.3 "s";
+  -webkit-transition: 0.3 "s";
+  -moz-transition: 0.3 "s";
+  -ms-transition: 0.3 "s";
+  -o-transition: 0.3 "s";
+  margin: 0;
+  margin-left: 0.3rem;
+  width: 6rem;
+}
+.submit:hover {
+  background: #ececec;
+  border: 1px solid #040610;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: #040610;
+}
+.submit:active {
+  background: #85CD72;
+  border: 1px solid #85CD72;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: #ececec;
+  transition: 0 "s";
+  -webkit-transition: 0 "s";
+  -moz-transition: 0 "s";
+  -ms-transition: 0 "s";
+  -o-transition: 0 "s";
 }
 
 .second_pg {
@@ -258,11 +352,11 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  transition: 0.3 s;
-  -webkit-transition: 0.3 s;
-  -moz-transition: 0.3 s;
-  -ms-transition: 0.3 s;
-  -o-transition: 0.3 s;
+  transition: 0.3 "s";
+  -webkit-transition: 0.3 "s";
+  -moz-transition: 0.3 "s";
+  -ms-transition: 0.3 "s";
+  -o-transition: 0.3 "s";
 }
 .quizz_answers_each:hover {
   background: #ececec;
@@ -283,11 +377,11 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   color: #ececec;
-  transition: 0 s;
-  -webkit-transition: 0 s;
-  -moz-transition: 0 s;
-  -ms-transition: 0 s;
-  -o-transition: 0 s;
+  transition: 0 "s";
+  -webkit-transition: 0 "s";
+  -moz-transition: 0 "s";
+  -ms-transition: 0 "s";
+  -o-transition: 0 "s";
 }
 .quizz .timer {
   display: flex;

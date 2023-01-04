@@ -44,7 +44,6 @@ AnswerA.onclick=function(){
     }
     currentIndex++;
     NextQuestion(currentIndex)
-
 }
 AnswerB.onclick=function(){
     if(questions[currentIndex].options[1].option == questions[currentIndex].explanation[3].answer ){
@@ -91,12 +90,14 @@ function startQuizz(){
 }
 
 function NextQuestion(index){
-    if(index>9){
+    if(index>questions.length-1){
         ShowResult()
+    }else{
+        displayQuestions(randomQuestions[index]);
+        clearInterval(TimeCount)       
+        timer();
     }
-    displayQuestions(randomQuestions[index]);
-    clearInterval(TimeCount)       
-    timer();
+  
 }
 
 function displayQuestions(questions){
@@ -132,6 +133,7 @@ function displayQuestions(questions){
     for(let i=0;i<currentIndex+1;i++){
         progress.style.width = i*4.1+"rem";
     }
+
 }
 
 function ShowResult(){
@@ -277,7 +279,7 @@ function timer(){
         timeCount.innerHTML ="00 : "+seconds;
     }
     if(seconds==00){
-        console.log(currentIndex)
+        // console.log(currentIndex)
         explications.push(questions[currentIndex].explanation)
         // if(currentIndex>=9){
         //     ShowResult()
@@ -287,3 +289,9 @@ function timer(){
     }
     } , 1000)
 }
+
+
+let submit = document.querySelector(".submit");
+
+
+
