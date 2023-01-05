@@ -35,6 +35,8 @@ let TimeCount;
 moveInfo();
 
 
+
+
 //========clicks=======//
 AnswerA.onclick=function(){
     if(questions[currentIndex].options[0].option == questions[currentIndex].explanation[3].answer ){
@@ -279,11 +281,7 @@ function timer(){
         timeCount.innerHTML ="00 : "+seconds;
     }
     if(seconds==00){
-        // console.log(currentIndex)
         explications.push(questions[currentIndex].explanation)
-        // if(currentIndex>=9){
-        //     ShowResult()
-        // }
         currentIndex++;
         NextQuestion(currentIndex)
     }

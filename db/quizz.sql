@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 02 jan. 2023 à 17:19
+-- Généré le : jeu. 05 jan. 2023 à 16:48
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -109,6 +109,21 @@ INSERT INTO `questions` (`id`, `question`, `options_id`, `explanation_id`) VALUE
 (9, 'Which service would be used to send alerts based on Amazon CloudWatch alarms?', 9, 9),
 (10, 'Where can a user find information about prohibited actions on the AWS infrastructure?', 10, 10);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `ip_adress` varchar(255) NOT NULL,
+  `browserAndOs` varchar(255) NOT NULL,
+  `test_start_time` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `score` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Index pour les tables déchargées
 --
@@ -134,6 +149,12 @@ ALTER TABLE `questions`
   ADD KEY `explanation_id` (`explanation_id`);
 
 --
+-- Index pour la table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -154,6 +175,12 @@ ALTER TABLE `options`
 --
 ALTER TABLE `questions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT pour la table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Contraintes pour les tables déchargées
